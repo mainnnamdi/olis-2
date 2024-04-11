@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1c1e20;
+  color: #f2f2f2;
+}
+
+body #wrapper {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+body #wrapper header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+body #wrapper header .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  flex: 0.3;
+}
+
+body #wrapper header .logo .dp img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body #wrapper header .logo .greet h3 {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 400;
+  overflow: hidden;
+  /* Ensures the text is not displayed outside the box */
+  border-right: .15em solid rgba(255, 166, 0, 0.305);
+  /* Creates the typewriter cursor effect */
+  white-space: nowrap;
+  /* Keeps the text on one line */
+  width: fit-content;
+  letter-spacing: .15em;
+  line-height: 32px;
+  min-height: 32px;
+  /* Adjusts the spacing between letters */
+  animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+  /* Defines the typing animation */
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking Cursor Animation */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
+body #wrapper header .logo .greet h1 {
+  color: #0280fd;
+  font-size: 1.3rem;
+  font-weight: 550;
+  white-space: nowrap;
+}
+
+
+
+body #wrapper header .center-text p {
+  color: #929292;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2rem;
+
+}
+
+body #wrapper header .center-text p span {
+  color: #dfdfdf;
+}
+
+body #wrapper header .call-to-action {
+  flex: 0.2;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body #wrapper header .call-to-action button {
+  background-color: #0280fd;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #f2f2f2;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+h3{
+  color: #FFFFFF;
+}
+body #wrapper .details {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+body #wrapper .details h3 {
+  font-weight: 400;
+
+  margin-bottom: 0.65rem;
+}
+
+body #wrapper .details span {
+  display: inline-block;
+  color: #929292;
+}
+
+body #wrapper section#showcase-one {
+
+  margin-top: 4rem;
+  display: flex;
+  gap: 24px;
+}
+
+body #wrapper section#showcase-one .left {
+  flex: 0.6;
+}
+
+body #wrapper section#showcase-one .left .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 70px;
+  background-color: #14141b;
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: 300ms all ease;
+  font-weight: 800;
+}
+
+body #wrapper section#showcase-one .left .box h1 {
+  background: #238ea6;
+  background: linear-gradient(to right, rgba(35, 142, 166, 0.4941176471) 0%, #9b68c8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 42px;
+  width: 100%;
+  text-align: center;
+  transition: 400ms all ease;
+}
+
+body #wrapper section#showcase-one .left .box img {
+  transition: 300ms all ease;
+  width: 80%;
+  margin-bottom: -30px;
+}
+
+
+body #wrapper section#showcase-one .left .box:hover h1 {
+  transform: translateY(-40px);
+}
+
+body #wrapper section#showcase-one .left .box:hover img {
+  transform: translateY(-30px);
+}
+
+body #wrapper section#showcase-one .right {
+  flex: 0.4;
+}
+
+body #wrapper section#showcase-one .right .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  text-align: center;
+  background-color: #576ccd;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+body #wrapper section#showcase-one .right .box .texts {
+  width: 100%;
+  transition: 400ms all ease;
+  color: #fff;
+}
+
+
+body #wrapper section#showcase-one .right .box .texts h1 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+body #wrapper section#showcase-one .right .box .texts p {
+  font-weight: 500;
+  margin-bottom: 30px;
+
+}
+
+body #wrapper section#showcase-one .right .box img {
+  width: 80%;
+  transition: 300ms all ease;
+}
+
+body #wrapper section#showcase-one .right .box img.deposit-box {
+  position: absolute;
+  width: 150px;
+  top: 15%;
+  left: 0;
+}
+
+body #wrapper section#showcase-one .right .box img.money-wallet {
+  position: absolute;
+  width: 250px;
+  bottom: 15%;
+  left: 56%;
+}
+
+body #wrapper section#showcase-one .right .box .texts {
+  z-index: 1;
+}
+
+body #wrapper section#showcase-one .right .box img.dashboard-tablet {
+  z-index: 1;
+  margin-bottom: -30px;
+}
+
+body #wrapper section#showcase-one .right .box .overlay {
+  transition: 400ms all ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body #wrapper section#showcase-one .right .box:hover .overlay {
+  background-color: #00000038;
+
+}
+
+body #wrapper section#showcase-one .right .box:hover .texts {
+  transform: translateY(-40px);
+}
+
+
+
+body #wrapper section#showcase-one .right .box:hover img.dashboard-tablet {
+  transform: translateY(-30px);
+}
+
+
+
+body #wrapper form {
+  margin-top: 4rem;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+  background-image: url("assets/formbg.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body #wrapper form h1 {
+  font-size: 2.24rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+body #wrapper form .inputs {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+body #wrapper form .inputs label {
+  display: block;
+  margin-bottom: 0.45rem;
+}
+
+body #wrapper form .inputs .flexed {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+body #wrapper form .inputs .flexed .input {
+  flex: 1;
+}
+
+body #wrapper form .inputs .flexed .input input {
+  width: 90%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+body #wrapper form .inputs .bottom .text-area {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+body #wrapper form .inputs .bottom .text-area textarea {
+  width: 95%;
+  height: 150px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+body #wrapper form .inputs .bottom button {
+  width: 95%;
+  padding: 1rem;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: #0280fd;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+body #wrapper footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #929292;
+  padding: 4rem 1rem;
+  font-size: 0.85rem;
+}
+
+body #wrapper footer a {
+  color: #929292;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: underline;
+}
+
+body #wrapper footer a img {
+  width: 18px;
+  height: 18px;
+}
+
+.mobile-dp {
+  display: none;
+}
+
+/* mobile styles */
+
+@media (max-width: 767px) {
+
+  body #wrapper {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  body #wrapper header {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  body #wrapper header .logo .dp {
+    display: none;
+  }
+
+  body #wrapper header br {
+    display: none;
+  }
+
+  .mobile-dp {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 20px auto 30px;
+  }
+
+  body #wrapper header .logo .greet h3 {
+    margin-bottom: 5px;
+  }
+
+  body #wrapper header .center-text p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  #showcase-one {
+    display: flex;
+    flex-direction: column;
+    gap: 60px !important;
+  }
+
+  .showcase-two {
+    flex-direction: column-reverse !important;
+  }
+
+  #showcase-one .box {
+    height: 300px !important;
+  }
+
+  body #wrapper section#showcase-one .left .box h1 {
+    font-size: 22px;
+  }
+
+  body #wrapper form h1 {
+    font-size: 1.4rem;
+  }
+
+  body #wrapper form .inputs .flexed {
+    flex-direction: column;
+  }
+
+  body #wrapper form .inputs .flexed .input input {
+    width: 100%;
+  }
+
+  body #wrapper form .inputs .bottom .text-area textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  body #wrapper footer {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 40px;
+  }
+}
+
