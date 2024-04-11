@@ -433,7 +433,9 @@ body #wrapper footer a img {
   body #wrapper header .logo .greet h3 {
     margin-bottom: 5px;
   }
-
+ .greet{
+  align-items: center;
+ }
   body #wrapper header .center-text p {
     font-size: 1.2rem;
     line-height: 2rem;
